@@ -58,7 +58,6 @@ export abstract class ResourceLoader {
 
       return (
         !entry.isDirectory() &&
-        parsedName.name !== "index" &&
         !parsedName.base.endsWith(".d.ts") &&
         !entry.path.includes("__tests__") &&
         [".js", ".ts"].includes(parsedName.ext) &&
